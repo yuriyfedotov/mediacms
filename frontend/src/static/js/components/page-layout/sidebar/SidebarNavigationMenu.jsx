@@ -132,7 +132,7 @@ export function SidebarNavigationMenu() {
         items.push({
           link: links.user.addMedia,
           icon: 'video_call',
-          text: 'Upload media',
+          text: 'Загрузить медиа',
           className: 'nav-item-upload-media',
         });
 
@@ -140,7 +140,7 @@ export function SidebarNavigationMenu() {
           items.push({
             link: userPages.media,
             icon: 'video_library',
-            text: 'My media',
+            text: 'Мои медиа',
             className: 'nav-item-my-media',
           });
         }
@@ -150,7 +150,7 @@ export function SidebarNavigationMenu() {
         items.push({
           link: userPages.playlists,
           icon: 'playlist_play',
-          text: 'My playlists',
+          text: 'Мои плейлисты',
           className: 'nav-item-my-playlists',
         });
       }
@@ -200,7 +200,7 @@ export function SidebarNavigationMenu() {
       items.push({
         link: links.manage.media,
         icon: 'miscellaneous_services',
-        text: 'Manage media',
+        text: 'Управлять медиа',
         className: 'nav-item-manage-media',
       });
     }
@@ -209,7 +209,7 @@ export function SidebarNavigationMenu() {
       items.push({
         link: links.manage.users,
         icon: 'miscellaneous_services',
-        text: 'Manage users',
+        text: 'Управлять юзерами',
         className: 'nav-item-manage-users',
       });
     }
@@ -218,7 +218,7 @@ export function SidebarNavigationMenu() {
       items.push({
         link: links.manage.comments,
         icon: 'miscellaneous_services',
-        text: 'Manage comments',
+        text: 'Управлять комментариями',
         className: 'nav-item-manage-comments',
       });
     }

@@ -6,7 +6,7 @@ DEBUG = False
 
 # PORTAL NAME, this is the portal title and
 # is also shown on several places as emails
-PORTAL_NAME = "MediaCMS"
+PORTAL_NAME = "VIDEOKEEPER"
 PORTAL_DESCRIPTION = ""
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "Europe/London"
@@ -313,6 +313,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
+    "allauth.account.middleware.AccountMiddleware"
 ]
 
 ROOT_URLCONF = "cms.urls"
@@ -392,7 +394,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "mediacms",
         "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "PORT": "5050",
         "USER": "mediacms",
         "PASSWORD": "mediacms",
     }

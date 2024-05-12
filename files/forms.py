@@ -82,9 +82,9 @@ class ContactForm(forms.Form):
 
     def __init__(self, user, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
-        self.fields["name"].label = "Your name:"
-        self.fields["from_email"].label = "Your email:"
-        self.fields["message"].label = "Please add your message here and submit:"
+        self.fields["name"].label = "Ваше имя:"
+        self.fields["from_email"].label = "Ваша почта:"
+        self.fields["message"].label = "Пожалуйста введите свое сообщение:"
         self.user = user
         if user.is_authenticated:
             self.fields.pop("name")

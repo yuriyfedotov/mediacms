@@ -5,23 +5,23 @@ module.exports = {
   sidebar: {
     navMenuItems: [
       {
-        text: 'About',
+        text: 'О проекте',
         link: './about.html',
         icon: 'contact_support',
       },
       {
-        text: 'Terms',
+        text: 'Условия',
         link: './terms.html',
         icon: 'description',
       },
       {
-        text: 'Contact',
+        text: 'Связь с нами',
         link: './contact.html',
         icon: 'alternate_email',
       },
     ],
     belowNavMenu: null,
-    footer: 'Powered by <a href="//demo.mediacms.io" title="mediacms.io" target="_blank">mediacms.io</a>',
+    footer: '',
   },
   uploader: {
     belowUploadArea: '',
@@ -29,10 +29,10 @@ module.exports = {
   },
   notifications: {
     messages: {
-      addToLiked: 'Added to liked media',
-      removeFromLiked: 'Removed from liked media',
-      addToDisliked: 'Added to disliked media',
-      removeFromDisliked: 'Removed from disliked media',
+      addToLiked: 'Добавить в лайкнутые видео',
+      removeFromLiked: 'Убрать из лайкнутых видео',
+      addToDisliked: 'Добавить в непонравившиеся видео',
+      removeFromDisliked: 'Убрать из непонравившихся видео',
     },
   },
 };

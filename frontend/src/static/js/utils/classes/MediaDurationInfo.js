@@ -57,13 +57,13 @@ export class MediaDurationInfo {
     if (void 0 === _MediaDurationInfoData[this.id].ariaLabel) {
       let r = [];
       if (0 < _MediaDurationInfoData[this.id].hours) {
-        r.push(_MediaDurationInfoData[this.id].hours + ' hours');
+        r.push(_MediaDurationInfoData[this.id].hours + ' часов');
       }
       if (0 < _MediaDurationInfoData[this.id].minutes) {
-        r.push(_MediaDurationInfoData[this.id].minutes + ' minutes');
+        r.push(_MediaDurationInfoData[this.id].minutes + ' минут');
       }
       if (0 < _MediaDurationInfoData[this.id].seconds) {
-        r.push(_MediaDurationInfoData[this.id].seconds + ' seconds');
+        r.push(_MediaDurationInfoData[this.id].seconds + ' секунд');
       }
       _MediaDurationInfoData[this.id].ariaLabel = r.join(', ');
     }

@@ -65,28 +65,29 @@ export function VideoMediaDownloadLink(props) {
   const [downloadOptionsCurrentPage, setDownloadOptionsCurrentPage] = useState('main');
 
   return (
-    <div className="video-downloads hidden-only-in-small">
-      <PopupTrigger contentRef={popupContentRef}>
-        <button>
-          <CircleIconButton type="span">
-            <MaterialIcon type="arrow_downward" />
-          </CircleIconButton>
-          <span>DOWNLOAD</span>
-        </button>
-      </PopupTrigger>
+    <></>
+    // <div className="video-downloads hidden-only-in-small">
+    //   <PopupTrigger contentRef={popupContentRef}>
+    //     <button>
+    //       <CircleIconButton type="span">
+    //         <MaterialIcon type="arrow_downward" />
+    //       </CircleIconButton>
+    //       <span>DOWNLOAD</span>
+    //     </button>
+    //   </PopupTrigger>
 
-      <div className={'nav-page-' + downloadOptionsCurrentPage}>
-        <PopupContent contentRef={popupContentRef}>
-          <NavigationContentApp
-            pageChangeCallback={null}
-            initPage="main"
-            focusFirstItemOnPageChange={false}
-            pages={downloadOptionsPages()}
-            pageChangeSelector={'.change-page'}
-            pageIdSelectorAttr={'data-page-id'}
-          />
-        </PopupContent>
-      </div>
-    </div>
+    //   <div className={'nav-page-' + downloadOptionsCurrentPage}>
+    //     <PopupContent contentRef={popupContentRef}>
+    //       <NavigationContentApp
+    //         pageChangeCallback={null}
+    //         initPage="main"
+    //         focusFirstItemOnPageChange={false}
+    //         pages={downloadOptionsPages()}
+    //         pageChangeSelector={'.change-page'}
+    //         pageIdSelectorAttr={'data-page-id'}
+    //       />
+    //     </PopupContent>
+    //   </div>
+    // </div>
   );
 }

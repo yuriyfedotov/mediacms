@@ -4,27 +4,27 @@ export function init(settings) {
   PAGES = {
     latest: {
       enabled: false,
-      title: 'Recent uploads',
+      title: 'Недавние',
     },
     featured: {
       enabled: false,
-      title: 'Featured',
+      title: 'Избранное',
     },
     recommended: {
       enabled: false,
-      title: 'Recommended',
+      title: 'Рекомндованное',
     },
     members: {
       enabled: false,
-      title: 'Members',
+      title: 'Участники',
     },
     liked: {
       enabled: false,
-      title: 'Liked media',
+      title: 'Ваши лайки',
     },
     history: {
       enabled: false,
-      title: 'History',
+      title: 'История',
     },
   };
 

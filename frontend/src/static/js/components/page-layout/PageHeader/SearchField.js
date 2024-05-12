@@ -296,7 +296,7 @@ export function SearchField(props) {
               <input
                 ref={searchInputRef}
                 type="text"
-                placeholder="Search"
+                placeholder="Искать"
                 aria-label="Search"
                 name="q"
                 value={queryVal}
@@ -311,7 +311,7 @@ export function SearchField(props) {
                 </PopupMain>
               </PopupContent>
             </div>
-            <button type="submit" aria-label="Search">
+            <button type="submit" aria-label="Искать">
               <MaterialIcon type="search" />
             </button>
           </div>

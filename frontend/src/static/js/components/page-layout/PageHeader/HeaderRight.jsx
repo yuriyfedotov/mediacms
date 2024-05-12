@@ -62,7 +62,7 @@ function headerPopupPages(user, popupNavItems, hasHeaderThemeSwitcher) {
                 <i className="material-icons">arrow_back</i>
               </CircleIconButton>
             </span>
-            <span>Switch theme</span>
+            <span>Сменить тему</span>
           </div>
         </PopupTop>
         <PopupMain>
@@ -80,7 +80,7 @@ function UploadMediaButton({ user, links }) {
     <div className={'hidden-only-in-small'}>
       <CircleIconButton type="link" href={links.user.addMedia} title="Upload media">
         <MaterialIcon type="video_call" />
-        <span className="hidden-txt">Upload media</span>
+        <span className="hidden-txt">Загрузить медиа</span>
       </CircleIconButton>
     </div>
   ) : null;
@@ -97,7 +97,7 @@ function LoginButton({ user, link, hasHeaderThemeSwitcher }) {
         }
         title="Sign in"
       >
-        Sign in
+        Войти
       </a>
     </div>
   ) : null;
@@ -114,7 +114,7 @@ function RegisterButton({ user, link, hasHeaderThemeSwitcher }) {
         }
         title="Register"
       >
-        Register
+        Регистрация
       </a>
     </div>
   ) : null;
@@ -134,7 +134,7 @@ export function HeaderRight(props) {
                 <div className="page-header-right">
                   <div>
                     <div className="mobile-search-toggle">
-                      <CircleIconButton onClick={toggleMobileSearch} aria-label="Search">
+                      <CircleIconButton onClick={toggleMobileSearch} aria-label="Искать">
                         <MaterialIcon type="search" />
                       </CircleIconButton>
                     </div>

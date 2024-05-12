@@ -12,10 +12,10 @@ const EmptyMedia: React.FC = ({}) => {
     <LinksConsumer>
       {(links) => (
         <div className="empty-media">
-          <div className="welcome-title">Welcome to MediaCMS!</div>
-          <div className="start-uploading">Start uploading media and sharing your work!</div>
+          <div className="welcome-title">Добро пожаловать в VIDEOKEEPER!</div>
+          <div className="start-uploading">Начните загружать медиафайлы и делиться своей работой!</div>
           <a href={links.user.addMedia} title="Upload media" className="button-link">
-            <i className="material-icons" data-icon="video_call"></i>UPLOAD MEDIA
+            <i className="material-icons" data-icon="video_call"></i>ЗАГРУЗИТЬ МЕДИА
           </a>
         </div>
       )}

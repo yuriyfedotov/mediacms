@@ -22,32 +22,32 @@ module.exports = {
   },
   pages: {
     latest: {
-      title: 'Recent uploads',
+      title: 'Недавно добавленные',
     },
     featured: {
-      title: 'Featured',
+      title: 'Избранное',
     },
     recommended: {
-      title: 'Recommended',
+      title: 'Рекомендуемое',
     },
     members: {
-      title: 'Members',
+      title: 'Участники',
     },
   },
   userPages: {
     liked: {
-      title: 'Liked media',
+      title: 'Ваши лайки',
     },
     history: {
-      title: 'History',
+      title: 'История',
     },
   },
   taxonomies: {
     tags: {
-      title: 'Tags',
+      title: 'Теги',
     },
     categories: {
-      title: 'Categories',
+      title: 'Категории',
     },
   },
 };

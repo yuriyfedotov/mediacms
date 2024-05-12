@@ -161,7 +161,7 @@ class ProfileSearchBar extends React.PureComponent {
             ref="SearchInput"
             type="text"
             name="aq"
-            placeholder="Search"
+            placeholder="Искать"
             aria-label="Search"
             value={this.state.queryVal}
             onChange={this.onChange}
@@ -315,13 +315,13 @@ class NavMenuInlineTabs extends React.PureComponent {
             <InlineTab
               id="about"
               isActive={'about' === this.props.type}
-              label={'About' + (this.userIsAuthor ? ' Me' : '')}
+              label={'Обо' + (this.userIsAuthor ? ' мне' : '')}
               link={LinksContext._currentValue.profile.about}
             />
             <InlineTab
               id="media"
               isActive={'media' === this.props.type}
-              label={(this.userIsAuthor ? 'My ' : '') + 'Media'}
+              label={(this.userIsAuthor ? 'Мои ' : '') + 'медиа'}
               link={LinksContext._currentValue.profile.media}
             />
 
@@ -329,7 +329,7 @@ class NavMenuInlineTabs extends React.PureComponent {
               <InlineTab
                 id="playlists"
                 isActive={'playlists' === this.props.type}
-                label={(this.userIsAuthor ? 'My ' : '') + 'Playlists'}
+                label={(this.userIsAuthor ? 'Мои ' : '') + 'Плейлисты'}
                 link={LinksContext._currentValue.profile.playlists}
               />
             ) : null}
@@ -374,7 +374,7 @@ function AddBannerButton(props) {
     link = '/edit-channel.html';
   }
   return (
-    <a href={link} className="edit-channel" title="Add banner">
+    <a href={link} className="edit-channel" title="Добавить банер">
       ADD BANNER
     </a>
   );
@@ -387,7 +387,7 @@ function EditBannerButton(props) {
     link = '/edit-channel.html';
   }
   return (
-    <a href={link} className="edit-channel" title="Edit banner">
+    <a href={link} className="edit-channel" title="Редактировать банер">
       EDIT BANNER
     </a>
   );
@@ -401,7 +401,7 @@ function EditProfileButton(props) {
   }
 
   return (
-    <a href={link} className="edit-profile" title="Edit profile">
+    <a href={link} className="edit-profile" title="Редактировать профиль">
       EDIT PROFILE
     </a>
   );
