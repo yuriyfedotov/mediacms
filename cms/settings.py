@@ -6,7 +6,7 @@ DEBUG = False
 
 # PORTAL NAME, this is the portal title and
 # is also shown on several places as emails
-PORTAL_NAME = "VIDEOKEEPER"
+PORTAL_NAME = "MediaCMS"
 PORTAL_DESCRIPTION = ""
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "Europe/London"
@@ -29,7 +29,7 @@ DEFAULT_THEME = "light"
 LOAD_FROM_CDN = False
 LOGIN_ALLOWED = True  # whether the login button appears
 REGISTER_ALLOWED = True  # whether the register button appears
-UPLOAD_MEDIA_ALLOWED = True  # whether the upload media button appears
+UPLOAD_MEDIA_ALLOWED = False  # whether the upload media button appears
 CAN_LIKE_MEDIA = True  # whether the like media appears
 CAN_DISLIKE_MEDIA = True  # whether the dislike media appears
 CAN_REPORT_MEDIA = True  # whether the report media appears
@@ -313,8 +313,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
-    "django.middleware.locale.LocaleMiddleware",
-    "allauth.account.middleware.AccountMiddleware"
 ]
 
 ROOT_URLCONF = "cms.urls"
@@ -394,7 +392,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "mediacms",
         "HOST": "127.0.0.1",
-        "PORT": "5050",
+        "PORT": "5432",
         "USER": "mediacms",
         "PASSWORD": "mediacms",
     }
